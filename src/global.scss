@@ -35,3 +35,21 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+@font-face {
+    font-family: 'kindHeart';
+    src: url('/assets/font/kind_heart.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'quicksand';
+    src: url('/assets/font/quicksand.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  ion-content {
+    --background: #FFFAFA; /* Color de fondo para los contenidos */
+  }
