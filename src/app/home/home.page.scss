@@ -25,3 +25,17 @@
 #container a {
   text-decoration: none;
 }
+
+@keyframes appear {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+#gridani {
+  animation: appear 2s forwards;
+  position: relative;
+}

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { gsap } from "gsap";
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { getElement } from 'ionicons/dist/types/stencil-public-runtime';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +14,8 @@ export class HomePage {
   private currentIndex: number = 0;
   private slideInterval: number = 5000; // Tiempo en milisegundos (5 segundos)
   private intervalId?: number;
+
+    // Select the element you want to animate (e.g., an HTML element with the ID "myElement")
 
   constructor() {}
 
@@ -70,4 +75,6 @@ export class HomePage {
       this.intervalId = window.setInterval(() => this.nextSlide(), this.slideInterval);
     }
   }
+
+
 }
